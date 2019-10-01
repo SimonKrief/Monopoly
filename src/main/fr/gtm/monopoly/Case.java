@@ -1,7 +1,7 @@
 package fr.gtm.monopoly;
 
 public abstract class Case {
-	private String name;
+	protected String name;
 	private String couleur;
 	private Case next;
 	
@@ -12,10 +12,10 @@ public abstract class Case {
 		this.name = name;
 	}
 
-	public Case(String name, String couleur) {
-		this.name = name;
-		this.couleur = couleur;
-	}
+//	public Case(String name, String couleur) {
+//		this.name = name;
+//		this.couleur = couleur;
+//	}
 	
 	public String getName() {
 		return name;
@@ -36,6 +36,8 @@ public abstract class Case {
 		this.couleur = couleur;
 	}
 	
+	public abstract void arreter(Joueur j) throws SoldeIllegalException;
 	
+	public abstract void passer(Joueur j) throws SoldeIllegalException;
 
 }

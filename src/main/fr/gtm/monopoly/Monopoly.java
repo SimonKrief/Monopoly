@@ -19,9 +19,20 @@ public class Monopoly {
 		p.setPosition(plateau.getCaseDepart());
 		joueurs.add(j);
 	}
-	public void jouer() {
-		
-	}
+
+//	public void jouer() {
+//		for (int i = 0; i < 10; i++) {
+//			for (Joueur j : joueurs) {
+//				try {
+//					j.jouer(des[0], des[1]);
+//
+//				} catch (SoldeIllegalException e) {
+//					System.out.println("Le joueur a triché ");
+//				}
+//			}
+//		}
+//	}
+	
 	public Joueur getVainqueur() {
 		return vainqueur;
 	}

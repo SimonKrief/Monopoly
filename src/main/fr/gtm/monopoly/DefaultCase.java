@@ -13,4 +13,17 @@ public class DefaultCase extends Case {
 		super(name, couleur);
 	}
 
+	@Override
+	public void passer(Joueur j) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void arreter(Joueur j) {
+		System.out.println(j.getNom()+" s'arrete sur la "+ this.getName());
+		// TODO Auto-generated method stub
+		
+	}
+
 }
