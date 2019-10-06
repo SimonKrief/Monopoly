@@ -2,10 +2,13 @@ package fr.gtm.monopoly;
 
 public abstract class Case {
 	protected String name;
-	private String couleur;
+	protected String couleur;
 	private Case next;
 	
-	public Case() {}
+	public Case(String name2, String couleur2) {
+		this.name = name2;
+		this.couleur = couleur2;
+	}
 	
 	
 	public Case(String name) {

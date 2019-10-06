@@ -56,7 +56,7 @@ public class Joueur {
 		
 	}
 
-	public static void interesseParAchat(Propriete p, Joueur j) {
+	public static void interesseParAchat(Propriete p, Joueur j) throws SoldeIllegalException {
 		// TODO Auto-generated method stub
 		if (j.solde>p.prix) {
 			p.setProprietaire(j);

@@ -1,6 +1,8 @@
 package fr.gtm.monopoly;
 
 public abstract class Propriete extends Case{
+	protected static String name;
+	private static String couleur;
 	private Joueur proprietaire;
 	public Joueur getProprietaire() {
 		return proprietaire;
@@ -14,7 +16,7 @@ public abstract class Propriete extends Case{
 	int loyer = 10;
 	
 	public Propriete(int prix, int loyer) {
-		super();
+		super(name,couleur);
 		this.prix = prix;
 		this.loyer = loyer;
 	}

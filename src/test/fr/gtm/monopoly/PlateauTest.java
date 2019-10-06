@@ -7,7 +7,7 @@ import org.junit.Test;
 public class PlateauTest {
 
     @Test
-    public void test() {
+    public void test() throws SoldeIllegalException {
         Plateau p = new Plateau();
         assertNotNull(p);
         Case depart = p.getCaseDepart();
@@ -22,7 +22,7 @@ public class PlateauTest {
         assertEquals(40, cpt);
 
         Monopoly m = new Monopoly();
-        Joueur j1 = new Joueur();
+        Joueur j1 = new Joueur("Henry");
         Pion p1 = new Pion();
         m.addJoueur(j1, p1);
         De d1 = new De();
